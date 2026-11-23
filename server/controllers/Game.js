@@ -47,7 +47,7 @@ const seedStarterPrompts = async (ownerId) => {
             owner: ownerId,
         },
         {
-            question: 'Name a color in the classic ROYGBIV rainbow',
+            question: 'Name a color in the classic rainbow',
             category: 'General',
             isPrivate: false,
             answers: buildAnswerOptions([
