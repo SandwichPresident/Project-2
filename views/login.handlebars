@@ -1,27 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>DomoMaker</title>
+  <title>DepthRank | Login</title>
   <link rel="shortcut icon" href="/assets/img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="/assets/style.css" />
 </head>
 
 <body>
-  <nav><a href="/login"><img id="logo" src="/assets/img/face.png" alt="face logo" /></a>
-    <div class="navlink"><a id="loginButton" href="/login">Login</a></div>
-    <div class="navlink"><a id="signupButton" href="/signup">Sign up</a></div>
+  <nav class="navbar">
+    <a class="brand" href="/login">DepthRank</a>
+    <div class="navLinks">
+      <a id="loginButton" class="navlink" href="/login">Login</a>
+      <a id="signupButton" class="navlink" href="/signup">Sign Up</a>
+    </div>
   </nav>
 
-  <section id="content">
+  <main class="container">
+    <section class="heroBanner">
+      <h1>Think Beyond the Obvious.</h1>
+      <p>Answer open-ended prompts—the rarer your valid answer, the deeper your score.</p>
+    </section>
 
-  </section>
+    <div id="statusMessage" class="statusBanner hidden">
+      <span id="errorMessage"></span>
+    </div>
 
-  <div id="domoMessage" class='hidden'>
-    <img id="speech" src="/assets/img/speech.png" alt="speech box" />
-    <h3><span id="errorMessage"></span></h3>
-    <img id="domo" src="assets/img/domo.png" alt="domo" />
-  </div>
+    <section id="content"></section>
+  </main>
+
   <script src="/assets/loginBundle.js"></script>
 </body>
 
