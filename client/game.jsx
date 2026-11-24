@@ -307,7 +307,7 @@ const AccountPanel = ({ account, onAccountUpdated }) => {
 
                 <h4 style={{ marginBottom: '0.4rem' }}>Membership & Ads (Profit Model Demo)</h4>
                 <p style={{ fontSize: '0.9rem', color: '#bcccdc', marginBottom: '0.8rem' }}>
-                    Current Plan: <strong>{account.isPremium ? 'DepthRank Premium (Ad-Free)' : 'Free Tier (Ad-Supported)'}</strong>
+                    Current Plan: <strong>{account.isPremium ? 'Abyssal Dive Premium (Ad-Free)' : 'Free Tier (Ad-Supported)'}</strong>
                 </p>
                 <button type="button" className="btnPrimary" onClick={handleTogglePremium}>
                     {account.isPremium ? 'Switch Back to Free Tier' : 'Upgrade to Premium (Demo)'}

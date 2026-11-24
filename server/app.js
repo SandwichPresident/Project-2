@@ -14,7 +14,7 @@ const router = require('./router.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
-const dbURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/DepthRank';
+const dbURI = process.env.MONGODB_URI || 'mongodb://127.0.0.1/AbyssalDive';
 mongoose.connect(dbURI).catch((err) => {
     if (err) {
         console.log('Could not connect to database');
@@ -43,7 +43,7 @@ redisClient.connect().then(() => {
         store: new RedisStore({
             client: redisClient,
         }),
-        secret: process.env.SESSION_SECRET || 'DepthRankSessionSecretKey',
+        secret: process.env.SESSION_SECRET || 'AbyssalDiveSessionSecretKey',
         resave: false,
         saveUninitialized: false,
     }));
